@@ -5,6 +5,7 @@ if [[ "$unamestr" == "Darwin" ]]; then
 else
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   echo 'Must add "$HOME/.linuxbrew/bin:$PATH" to $PATH'
+  export PATH=$HOME/.linuxbrew/bin:$PATH
 fi
 
 brew tap homebrew/science
