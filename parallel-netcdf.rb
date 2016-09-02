@@ -3,7 +3,7 @@ require "formula"
 class ParallelNetcdf < Formula
   homepage "https://trac.mcs.anl.gov/projects/parallel-netcdf"
   url "http://cucis.ece.northwestern.edu/projects/PnetCDF/Release/parallel-netcdf-1.4.1.tar.bz2"
-  sha1 "0839b9789266f8c2be3656d7287f0776b797626f"
+  sha256 "a79e8bfebde5baaa17470ff4425cbdcf99bd3cd265efdf3a8aedeca91c057463"
 
   depends_on :x11 # if your formula requires any X11/XQuartz components
   depends_on "netcdf" => "enable-fortran"
