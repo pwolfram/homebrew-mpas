@@ -6,3 +6,6 @@ else
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   echo 'Must add "$HOME/.linuxbrew/bin:$PATH" to $PATH'
 fi
+
+brew tap homebrew/science
+brew tap pwolfram/mpas
