@@ -8,7 +8,7 @@ class Pio < Formula
 
   depends_on :x11 # if your formula requires any X11/XQuartz components
   depends_on "open-mpi"
-  depends_on "parallel-netcdf"
+  depends_on "pwolfram/mpas/parallel-netcdf"
 
   def install
     ENV.deparallelize  # if your formula fails when building in parallel
