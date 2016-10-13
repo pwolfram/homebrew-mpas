@@ -2,9 +2,8 @@ require "formula"
 
 class Pio < Formula
   homepage "https://code.google.com/p/parallelio/"
-  #url "https://parallelio.googlecode.com/files/pio1_6_3.tgz"
-  #sha1 "44285d4b15cbd88d57f76c71fb38565b0cbc40a0"
-  url 'http://parallelio.googlecode.com/svn/trunk_tags/pio1_7_2/', :using => :svn
+  url "https://github.com/NCAR/ParallelIO/archive/pio1_7_2.tar.gz"
+  sha256 "ecc9b50e2c75f0189c76917a555aee3b6dc3cc5e38232007577c51bb2c977e39"
 
   depends_on :x11 # if your formula requires any X11/XQuartz components
   depends_on "open-mpi"
@@ -12,10 +11,10 @@ class Pio < Formula
 
   def install
     ENV.deparallelize  # if your formula fails when building in parallel
-    #puts ENV['NETCDF_PATH']
-    #ENV['NETCDF_PATH'] = "/usr/local"
-    #puts ENV['PNETCDF_PATH']
-    #ENV['PNETCDF_PATH'] = "/usr/local"
+    puts ENV['NETCDF_PATH']
+    ENV['NETCDF_PATH'] = "/usr/local"
+    puts ENV['PNETCDF_PATH']
+    ENV['PNETCDF_PATH'] = "/usr/local"
     #puts ENV['FC']
     #ENV['FC'] = "ifort"
     #puts ENV['CC']

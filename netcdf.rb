@@ -46,6 +46,7 @@ class Netcdf < Formula
       --prefix=#{prefix}
       --enable-static
       --enable-shared
+      --enable-fortran
     ]
 
     args = common_args.clone
