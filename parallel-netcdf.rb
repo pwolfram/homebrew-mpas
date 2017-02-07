@@ -28,10 +28,10 @@ class ParallelNetcdf < Formula
                           "--prefix=#{prefix}"
     system "make", "install"
 
-    ## test libraries
-    #Dir.chdir('test') do
-    #  system "make check testing"
-    #end
+    # test libraries
+    Dir.chdir('test') do
+      system "make check testing"
+    end
 
   end
 end

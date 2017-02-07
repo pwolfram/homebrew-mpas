@@ -12,9 +12,9 @@ class Pio < Formula
   def install
     ENV.deparallelize  # if your formula fails when building in parallel
     puts ENV['NETCDF_PATH']
-    ENV['NETCDF_PATH'] = "/usr/local"
+    ENV['NETCDF_PATH'] = "/usr/local/"
     puts ENV['PNETCDF_PATH']
-    ENV['PNETCDF_PATH'] = "/usr/local"
+    ENV['PNETCDF_PATH'] = "/usr/local/"
     #puts ENV['FC']
     #ENV['FC'] = "ifort"
     #puts ENV['CC']
