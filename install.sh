@@ -10,3 +10,7 @@ fi
 
 brew tap homebrew/science
 brew tap pwolfram/mpas
+
+brew install pwolfram/mpas/netcdf --enable-fortran --enable-cxx-compat
+brew install pwolfram/mpas/parallel-netcdf
+brew install pwolfram/mpas/pio
