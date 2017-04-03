@@ -6,7 +6,7 @@ class Netcdf < Formula
   sha256 'bdde3d8b0e48eed2948ead65f82c5cfb7590313bc32c4cf6c6546e4cea47ba19'
 
   depends_on :fortran if build.include? 'enable-fortran'
-  depends_on 'hdf5'
+  depends_on 'hdf5@1.8'
 
   option 'enable-fortran', 'Compile Fortran bindings'
   option 'disable-cxx-compat', "Don't compile C++ bindings"
