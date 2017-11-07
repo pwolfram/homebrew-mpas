@@ -6,7 +6,7 @@ class Pio < Formula
   sha256 "ecc9b50e2c75f0189c76917a555aee3b6dc3cc5e38232007577c51bb2c977e39"
 
   depends_on :x11 # if your formula requires any X11/XQuartz components
-  depends_on "open-mpi"
+  depends_on "open-mpi@1.6"
   depends_on "pwolfram/mpas/parallel-netcdf"
 
   def install
