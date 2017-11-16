@@ -6,6 +6,7 @@ class ParallelNetcdf < Formula
   sha256 "a79e8bfebde5baaa17470ff4425cbdcf99bd3cd265efdf3a8aedeca91c057463"
 
   depends_on :x11 # if your formula requires any X11/XQuartz components
+  depends_on :"open-mpi@1.6"
   depends_on "pwolfram/mpas/netcdf" => "enable-fortran"
 
   def install
