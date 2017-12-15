@@ -17,6 +17,7 @@ brew link open-mpi@1.6 --force
 # note that there is an incompatability with open-mpi 3.0 and parallel-netcdf
 brew install pwolfram/mpas/parallel-netcdf
 brew install pwolfram/mpas/pio
+brew reinstall nco --build-from-source
 
 # needed for mesh generation tools
 brew install llvm
