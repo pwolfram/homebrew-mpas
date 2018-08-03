@@ -8,16 +8,18 @@ else
   export PATH=$HOME/.linuxbrew/bin:$PATH
 fi
 
-brew tap homebrew/science
 brew tap pwolfram/mpas
+brew tap brewsci/science
 
-brew install pwolfram/mpas/netcdf --enable-fortran --enable-cxx-compat
-brew install open-mpi@1.6
-brew link open-mpi@1.6 --force
-# note that there is an incompatability with open-mpi 3.0 and parallel-netcdf
-brew install pwolfram/mpas/parallel-netcdf
+echo 'May need a proxy for this to work...'
+# may need to use `export https_proxy=http://proxyout.lanl.gov:8080`
+# note presumes only mpich is in use
+brew install mpich
+brew install netcdf
+brew install brewsci/science/parallel-netcdf
 brew install pwolfram/mpas/pio
-brew reinstall nco --build-from-source
+
+#brew reinstall nco --build-from-source
 
 # needed for mesh generation tools
 brew install llvm
