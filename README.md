@@ -10,8 +10,8 @@ Run `./install.sh` to install brew and taps needed for this installation.
    - netcdf 4.6.1
    - netcdf-cxx 4.3
    - netcdf-fortran 4.4.4
- * parallel-netcdf 1.7.0: `brew install pwolfram/mpas/parallel-netcdf`
- * pio 1.7.2: `brew install pwolfram/mpas/pio`
+ * parallel-netcdf 1.7.0: `brew install pwolfram/mpas/parallel-netcdf --build-from-source`
+ * pio 1.7.2: `brew install pwolfram/mpas/pio --build-from-source`
 
 Compile MPAS, e.g.,
 ```

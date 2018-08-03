@@ -7,7 +7,7 @@ class Pio < Formula
 
   depends_on "mpich"
   depends_on "netcdf"
-  depends_on "brewsci/science/parallel-netcdf"
+  depends_on "pwolfram/mpas/parallel-netcdf"
 
   def install
     ENV.deparallelize  # if your formula fails when building in parallel

@@ -9,15 +9,14 @@ else
 fi
 
 brew tap pwolfram/mpas
-brew tap brewsci/science
 
 echo 'May need a proxy for this to work...'
 # may need to use `export https_proxy=http://proxyout.lanl.gov:8080`
 # note presumes only mpich is in use
 brew install mpich
 brew install netcdf
-brew install brewsci/science/parallel-netcdf
-brew install pwolfram/mpas/pio
+brew install pwolfram/mpas/parallel-netcdf --build-from-source
+brew install pwolfram/mpas/pio --build-from-source
 
 #brew reinstall nco --build-from-source
 
